@@ -5,8 +5,12 @@ UnixApp-1.0
 
 iThe Logscape App for Unix helps you monitor, search and visualize the number of processes, the average load and bandwidth, and the CPU, memory and swap usage of Unix hosts.
 
+## Downloads 
 
-# QuickStart
+ * [UnixApp-1.0.zip](https://github.com/logscape/unixapp/raw/master/dist/UnixApp-1.0.zip)
+ * [UnixApp-1.0-overrides.properties](https://www.google.com)
+
+## QuickStart
 
 
 ![](docs/images/unx_home_0.png) 
