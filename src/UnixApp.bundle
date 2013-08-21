@@ -1,0 +1,109 @@
+<Bundle name="UnixApp" version="1.0" system="false">
+  <status>UNINSTALLED</status>
+  <owner>info@liquidlabs.co.uk</owner>
+  <services>
+	   <Service>
+	      	<name>UNIX_CPU_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>30</pauseSeconds>
+	      	<script>bin/cpu.sh</script>
+ 	   </Service>
+
+
+           <Service>
+                <name>UNIX_IO_wHOST_wTSTAMP</name>
+                        <resourceSelection>osName notContains WINDOWS</resourceSelection>
+                <fork>false</fork>
+                <background>true</background>
+                        <instanceCount>-1</instanceCount>
+                        <pauseSeconds>33</pauseSeconds>
+                <script>bin/io.sh</script>
+          </Service>
+
+
+	   <Service>
+	      	<name>UNIX_BANDWIDTH_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>30</pauseSeconds>
+	      	<script>bin/bandwidth.sh</script>
+	   </Service>
+ 
+
+	   <Service>
+	      	<name>UNIX_DF_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>300</pauseSeconds>
+	      	<script>bin/df.sh</script>
+        </Service>
+
+
+	   <Service>
+	      	<name>UNIX_Hardware_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>3600</pauseSeconds>
+	      	<script>bin/hardware.sh</script>
+	</Service>
+
+	<Service>
+	      	<name>UNIX_LSOFCount_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>300</pauseSeconds>
+	      	<script>bin/lsof_count.sh</script>
+	</Service>
+
+	<Service>
+	      	<name>UNIX_NWPackets_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>60</pauseSeconds>
+	      	<script>bin/protocol.sh</script>
+	</Service>
+
+	<Service>
+	      	<name>UNIX_PS_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>40</pauseSeconds>
+	      	<script>bin/ps.sh</script>
+	</Service>
+
+	<Service>
+	      	<name>UNIX_VMStat_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>60</pauseSeconds>
+	      	<script>bin/vmstat.sh</script>
+	</Service>
+
+	<Service>
+	      	<name>UNIX_FREE_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>60</pauseSeconds>
+	      	<script>bin/free.sh</script>
+	</Service>
+  </services>
+</Bundle>
