@@ -3,25 +3,35 @@ UnixApp-1.0
 
 # Intro
 
-iThe Logscape App for Unix helps you monitor, search and visualize the number of processes, the average load and bandwidth, and the CPU, memory and swap usage of Unix hosts.
+The UnixApps monitors disk,network and system health.
+
+## Prequisites
+
+	sar needs to be installed
 
 ## Downloads 
 
  * [UnixApp-1.0.zip](https://github.com/logscape/unixapp/raw/master/dist/UnixApp-1.0.zip)
  * [UnixApp-1.0-overrides.properties](https://www.google.com)
 
-## QuickStart
 
+# Overview
+
+The home page gives you an estate wide view of your server health. Identify quickly when your server are struggling under load. 
 
 ![](docs/images/unx_home_0.png) 
-# Overview
+
+# Disk Performance
+
+Shows your disk throughput and disk latency. It is useful for monitoring hosts running disk-bound applications such as databases and webservers. 
 
 ![](docs/images/unx_disk_0.png) 
 
-## Network 
+## Network Throughput 
+
+
 
 ![](docs/images/unx_network_0.png) 
-## Process 
+## Process Activity  
 
 ![](docs/images/unx_process_0.png) 
-## Syslog 
