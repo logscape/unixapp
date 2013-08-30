@@ -5,7 +5,7 @@ The UnixApps monitors disk,network and system health.
 
 ## Prequisites
 
-The following commands should be available from the command-line. They are in most default Linux/Unix installations. 
+The following commands should be available from the command-line. They are available in most default Linux/Unix installations. 
 
 	sar needs to be installed.
 	iostat is required for disk performance metrics 
