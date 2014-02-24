@@ -47,8 +47,8 @@ case "$REL" in
 	CMD="$CMD_IOSTAT_OSX $CMD_FILTER_OSX"
 	;;
 *)
-	# Unknown OS
-	CMD="echo"
+	# Unknown OS , defaults to Ubuntu 
+	CMD="$CMD_IOSTAT_UBNT $CMD_SLICE_HEAD_OFF $CMD_FILTER_UBNT"
 	;;
 esac
 
