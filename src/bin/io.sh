@@ -7,7 +7,7 @@ export PATH=/bin:/usr/bin:/usr/local/bin:/usr/sbin:/sbin
 # (collect r/w speeds in KB/sec and convert them to MB/sec later
 CMD_IOSTAT_RHAT="iostat -xk 1 2"
 CMD_IOSTAT_UBNT="iostat -xk 1 2"
-CMD_IOSTAT_SOLS="iostat -zx 1 2"
+CMD_IOSTAT_SOLS="iostat -x 1 2"
 CMD_IOSTAT_OSX="iostat -dK -n32 1 2"
 
 # processing commands:

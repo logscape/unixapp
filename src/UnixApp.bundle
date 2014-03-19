@@ -2,6 +2,18 @@
   <status>UNINSTALLED</status>
   <owner>info@liquidlabs.co.uk</owner>
   <services>
+
+	   <Service>
+	      	<name>UNIX_LOAD_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>15</pauseSeconds>
+	      	<script>bin/load.sh</script>
+ 	   </Service>
+
+
 	   <Service>
 	      	<name>UNIX_CPU_wHOST_wTSTAMP</name>
 			<resourceSelection>osName notContains WINDOWS</resourceSelection>
