@@ -1,4 +1,4 @@
-<Bundle name="UnixApp" version="1.0" system="false">
+<Bundle name="UnixApp" version="1.1" system="false">
   <status>UNINSTALLED</status>
   <owner>info@liquidlabs.co.uk</owner>
   <services>
@@ -11,6 +11,17 @@
 			<instanceCount>-1</instanceCount>
 			<pauseSeconds>15</pauseSeconds>
 	      	<script>bin/load.sh</script>
+ 	   </Service>
+
+
+	   <Service>
+	      	<name>UNIX_PING_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>60</pauseSeconds>
+	      	<script>bin/ping.sh</script>
  	   </Service>
 
 
@@ -68,7 +79,7 @@
 	      	<script>bin/hardware.sh</script>
 	</Service>
 
-	<Service>
+	<!--Service>
 	      	<name>UNIX_LSOFCount_wHOST_wTSTAMP</name>
 			<resourceSelection>osName notContains WINDOWS</resourceSelection>
 	      	<fork>false</fork>
@@ -76,7 +87,18 @@
 			<instanceCount>-1</instanceCount>
 			<pauseSeconds>300</pauseSeconds>
 	      	<script>bin/lsof_count.sh</script>
+	</Service-->
+
+	<Service>
+	      	<name>UNIX_FILECount_wHOST_wTSTAMP</name>
+			<resourceSelection>osName notContains WINDOWS</resourceSelection>
+	      	<fork>false</fork>
+	      	<background>true</background>
+			<instanceCount>-1</instanceCount>
+			<pauseSeconds>60</pauseSeconds>
+	      	<script>bin/filecount.sh</script>
 	</Service>
+
 
 	<Service>
 	      	<name>UNIX_NWPackets_wHOST_wTSTAMP</name>
