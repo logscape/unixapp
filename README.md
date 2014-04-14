@@ -13,6 +13,7 @@ The following commands should be available from the command-line. They are avail
 ## Downloads 
 
  * [UnixApp-1.1.zip](https://github.com/logscape/unixapp/raw/master/dist/UnixApp-1.1.zip)
+ * [Example Properties File ](https://github.com/logscape/unixapp/raw/master/dist/UnixApp-1.1-override.properties)
 
 
 ## Overview
