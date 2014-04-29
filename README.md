@@ -1,7 +1,6 @@
 UnixApp-1.1 ![](http://logscape.com/images/track.png?version=github)
 ===========
 
-![](http://logscape.com/images/track.png?version=github)
 
 The UnixApps monitors disk,network and system health.
 
