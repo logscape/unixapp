@@ -31,7 +31,7 @@
 	      	<fork>false</fork>
 	      	<background>true</background>
 			<instanceCount>-1</instanceCount>
-			<pauseSeconds>30</pauseSeconds>
+			<pauseSeconds>20</pauseSeconds>
 	      	<script>bin/cpu.sh</script>
  	   </Service>
 

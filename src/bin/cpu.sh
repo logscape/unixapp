@@ -12,7 +12,7 @@ if [ "x$KERNEL" = "xLinux" ] ; then
 	queryHaveCommand mpstat
 	FOUND_MPSTAT=$?
     if [ $FOUND_SAR -eq 0 ] ; then
-		CMD='sar 1 1'
+		CMD='sar 2 5'
 		FORMAT='{cpu=$2; pctUser=$3; pctNice=$4; pctSystem=$5; pctIowait=$6; pctIdle=$8}'
 	elif [ $FOUND_MPSTAT -eq 0 ] ; then
 		CMD='mpstat 1 1'
