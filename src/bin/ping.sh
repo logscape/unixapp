@@ -1,6 +1,5 @@
 #!/bin/sh
 
-echo $* >> args.list 
 for var in $(echo $*);do 
 	case "$var" in 
 		*=*)
