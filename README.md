@@ -37,3 +37,7 @@ Shows your disk throughput and disk latency. It is useful for monitoring hosts r
 ## Process Activity  
 
 ![](docs/images/unx_process_0.png) 
+
+## Audit Activity
+
+![](docs/images/unx_audit.png) 
