@@ -23,11 +23,8 @@ The home page gives you an estate wide view of your servers performance and heal
 
 ![](docs/images/unx_home_0.png) 
 
-## Disk Performance
 
-Shows your disk throughput and disk latency. It is useful for monitoring hosts running disk-bound applications such as databases and webservers. 
 
-![](docs/images/unx_disk_0.png) 
 
 ## Network Throughput 
 
