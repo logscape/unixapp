@@ -32,6 +32,10 @@ case "$REL" in
 *Hat*)
 	CMD="$CMD_NETSTAT_RHAT $CMD_FILTER_RHAT"
 	;;
+
+*Linux*)
+	CMD="$CMD_NETSTAT_RHAT $CMD_FILTER_RHAT"
+	;;
 *Solaris*)
 	CMD="$CMD_NETSTAT_SOLS $CMD_FILTER_SOLS"
 	;;
